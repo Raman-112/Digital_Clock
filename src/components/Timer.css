@@ -1,0 +1,66 @@
+.timer-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .timer-display {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px 50px;
+    display: inline-block;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: glow1 1s infinite alternate;
+
+  }
+  
+  .timer-controls {
+    margin-top: 20px;
+  }
+  
+  .timer-btn {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .timer-btn:hover {
+    background-color: #21a1f1;
+  }
+  
+  .timer-btn.pause {
+    background-color: #ff6f61;
+  }
+  
+  .timer-btn.resume {
+    background-color: #4caf50;
+  }
+  
+  .timer-btn.reset {
+    background-color: #ff4081;
+  }
+  
+
+
+  
+  @keyframes glow1 {
+    0% {
+      box-shadow: 0 0 10px rgba(127, 7, 179, 0.6), 0 0 20px rgba(45, 12, 214, 0.6), 0 0 30px rgba(243, 33, 191, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(243, 33, 96, 0.8), 0 0 40px rgba(255, 116, 181, 0.8), 0 0 60px rgba(33, 150, 243, 0.9);
+    }
+  }
+  
